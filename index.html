@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap Icons CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="bi bi-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="bi bi-list" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>BackEnd Developer</p>
+                <h1>Hi, I'm <span>Ritesh</span><br> From UP</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about section started -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="" srcset="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quibusdam minus mollitia quis facere perferendis repudiandae eos autem accusantium, amet, voluptas iste delectus quo omnis aut nesciunt, corporis sed incidunt?</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Ui?UX</span><br>Design Web Interfaces</li>
+                            <li><span>Web Development</span><br>Design Web App </li>
+                            <li><span>Backend</span><br>Design Web Interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span>March-2024-Present</span><br>Full Stack Developer at Laxmaya Technologies</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Aug 2022 - Aug 2024</span><br> MCA From JECRC University</li>
+                            <li><span>Aug 2018 - Aug 2021</span><br>BCA From UIM</li>
+                           
+                        </ul>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services section started -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="bi bi-code-slash"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero esse laudantium cum facere cumque a possimus quo eum. Esse, placeat est libero non numquam voluptatibus voluptate molestias quaerat a illum.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="bi bi-aspect-ratio"></i>
+                    <h2>Ui/Ux Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero esse laudantium cum facere cumque a possimus quo eum. Esse, placeat est libero non numquam voluptatibus voluptate molestias quaerat a illum.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="bi bi-google-play"></i>
+                    <h2>Back End</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero esse laudantium cum facere cumque a possimus quo eum. Esse, placeat est libero non numquam voluptatibus voluptate molestias quaerat a illum.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio  section started -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png" alt="" srcset="">
+                    <div class="layer">
+                        <h3>Social Media Link</h3>
+                        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet..</p>
+                        <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png" alt="" srcset="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet..</p>
+                        <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png" alt="" srcset="">
+                    <div class="layer">
+                        <h3>Online Social App</h3>
+                        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet..</p>
+                        <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- contact form -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="bi bi-envelope-at-fill"></i> g.ritesh9799@gmail.com</p>
+                    <p><i class="bi bi-telephone-forward"></i> +91 8808530958</p>
+                    <div class="social-icons">
+                        <a href="www.linkedin.com/in/ritesh-kumar-gupta-62852b200"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                    <a href="RiteshResumes.pdf" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="name" placeholder="Please Enter Your Name" required>
+                        <input type="email" name="email" placeholder="Please Enter Your email" required>
+                        <textarea name="Message"  rows="6" placeholder="Please Enter Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Ritesh.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
