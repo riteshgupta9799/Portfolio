@@ -379,6 +379,9 @@ margin: 10px 0;
      .copyright{
         font-size: 14px;
      }
+     .work img{
+        height: none;
+     }
  }
 
 
